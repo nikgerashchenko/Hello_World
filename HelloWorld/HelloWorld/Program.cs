@@ -1,21 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace HelloWorld
 {
     class Program
     {
        
-        
-        static void Main(string[] args)
-        
+
+        class Example
         {
-            var x = "Hello World!";
-            Console.WriteLine(x);
-            Console.Read();
+            static void Main()
+            {
+                Console.WriteLine("The version of the currently executing assembly is: {0}",
+                typeof(Example).Assembly.GetName().Version);
+
+                var assemblyVersion = typeof(Example).Assembly;
+                Console.WriteLine(assemblyVersion);
+                Console.Read();
+
+
+            }
+
         }
     }
 }
