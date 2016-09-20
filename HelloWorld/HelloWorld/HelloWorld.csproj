@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GlobalAssemblyInfoKAPSII.cs" />
+    <Compile Include="..\GlobalAssemblyInfoKAPSII.cs">
+      <Link>GlobalAssemblyInfoKAPSII.cs</Link>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

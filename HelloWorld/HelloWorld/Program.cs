@@ -16,11 +16,11 @@ namespace HelloWorld
         {
             static void Main()
             {
-                Console.WriteLine("The version of the currently executing assembly is: {0}",
-                typeof(Example).Assembly.GetName().Version);
-
+                
                 var assemblyVersion = typeof(Example).Assembly;
+                var attr = assemblyVersion.GetCustomAttribute<AssemblyInformationalVersionAttribute>();
                 Console.WriteLine(assemblyVersion);
+                Console.WriteLine(attr.InformationalVersion);
                 Console.Read();
 
 
