@@ -1,0 +1,6 @@
+D:\Workspace\HelloWorld\TestIfDebug\TestIfDebug\bin\Debug\TestIfDebug.exe.config
+D:\Workspace\HelloWorld\TestIfDebug\TestIfDebug\bin\Debug\TestIfDebug.exe
+D:\Workspace\HelloWorld\TestIfDebug\TestIfDebug\bin\Debug\TestIfDebug.pdb
+D:\Workspace\HelloWorld\TestIfDebug\TestIfDebug\obj\Debug\TestIfDebug.exe
+D:\Workspace\HelloWorld\TestIfDebug\TestIfDebug\obj\Debug\TestIfDebug.pdb
+D:\Workspace\HelloWorld\TestIfDebug\TestIfDebug\obj\Debug\TestIfDebug.csprojResolveAssemblyReference.cache

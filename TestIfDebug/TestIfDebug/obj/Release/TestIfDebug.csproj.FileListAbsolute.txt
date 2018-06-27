@@ -1,0 +1,5 @@
+D:\Workspace\HelloWorld\TestIfDebug\TestIfDebug\bin\Release\TestIfDebug.exe.config
+D:\Workspace\HelloWorld\TestIfDebug\TestIfDebug\bin\Release\TestIfDebug.exe
+D:\Workspace\HelloWorld\TestIfDebug\TestIfDebug\bin\Release\TestIfDebug.pdb
+D:\Workspace\HelloWorld\TestIfDebug\TestIfDebug\obj\Release\TestIfDebug.exe
+D:\Workspace\HelloWorld\TestIfDebug\TestIfDebug\obj\Release\TestIfDebug.pdb
