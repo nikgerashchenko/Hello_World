@@ -3,15 +3,12 @@
 	<UsingTask TaskName="Microsoft.Build.Tasks.XmlPoke" AssemblyName="Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
 	<Import Project="$(MSBuildExtensionsPath)\MSBuildCommunityTasks\MSBuild.Community.Tasks.Targets"/>
 
-	<Target Name="Test" DependsOnTargets="">
-
-
-
+	
 
     <PropertyGroup>
-			<branch Condition="'$(branch)' == '' ">no branch</branch>
+			<branch>no branch</branch>
 	</PropertyGroup>
-
+	<Target Name="Test" DependsOnTargets="">
     <Message Text = "$(branch)"/>
 
     
