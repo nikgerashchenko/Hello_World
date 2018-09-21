@@ -7,7 +7,7 @@
 
 
 
-    <Message Text = "">
+    <Message Text = "Проверка">
 
 
 <!-- 		<PropertyGroup>
@@ -31,7 +31,6 @@
 		    	<PropertyGroup>
 		    		<Security>TransportWithMessageCredential</Security>
 		    		<Message>UserName</Message>
-		    		<!-- <transport>None</transport> -->
 		    	</PropertyGroup>	
 		    </When>
 		</Choose>  -->		
