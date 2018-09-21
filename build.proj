@@ -7,7 +7,14 @@
 
 
 
-    <Message Text = "Проверка"/>
+
+    <PropertyGroup>
+			<branch Condition="'$(branch)' == '' ">"no branch"</branch>
+	</PropertyGroup>
+
+    <Message Text = $(branch)/>
+
+    
 
 
 <!-- 		<PropertyGroup>
