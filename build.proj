@@ -9,10 +9,10 @@
 
 
     <PropertyGroup>
-			<branch Condition="'$(branch)' == '' ">"no branch"</branch>
+			<branch Condition="'$(branch)' == '' ">no branch</branch>
 	</PropertyGroup>
 
-    <Message Text = $(branch)/>
+    <Message Text = "$(branch)"/>
 
     
 
