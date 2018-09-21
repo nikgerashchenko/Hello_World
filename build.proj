@@ -1,0 +1,40 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<Project DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<UsingTask TaskName="Microsoft.Build.Tasks.XmlPoke" AssemblyName="Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+	<Import Project="$(MSBuildExtensionsPath)\MSBuildCommunityTasks\MSBuild.Community.Tasks.Targets"/>
+
+	<Target Name="Test" DependsOnTargets="">
+
+
+
+    <Message Text = "">
+
+
+<!-- 		<PropertyGroup>
+			<SecurityMode Condition="'$(SecurityMode)' == '' "></SecurityMode>
+		</PropertyGroup>
+		
+	 	<Choose>
+		    <When Condition="'$(SecurityMode)'=='Off'">
+		    	<PropertyGroup>
+					<EndpointAuthService Condition=" '$(EndpointAuthService)' == '' ">Please edit 'EndpointDocService'</EndpointAuthService>
+					<EndpointDocService Condition=" '$(EndpointDocService)' == '' ">Please edit 'EndpointDocService'</EndpointDocService>
+					<EndpointCatService Condition=" '$(EndpointCatService)' == '' ">Please edit 'EndpointCatService'</EndpointCatService>
+					<EndpointAttachService Condition=" '$(EndpointAttachService)' == '' ">Please edit 'EndpointAttachService'</EndpointAttachService>
+					<EndpointExcelReportsDataServices Condition=" '$(EndpointExcelReportsDataServices)' == '' ">Please edit 'EndpointExcelReportsDataServices'</EndpointExcelReportsDataServices>
+					<EndpointDataSourceDataProvider Condition=" '$(EndpointDataSourceDataProvider)' == '' ">Please edit 'EndpointDataSourceDataProvider'</EndpointDataSourceDataProvider>
+					<EndpointUpdateService Condition=" '$(EndpointUpdateService)' == '' ">Please edit 'EndpointUpdateService'</EndpointUpdateService>
+					<EndpointSitaIntegrationService Condition=" '$(EndpointSitaIntegrationService)' == '' ">Please edit 'EndpointSitaIntegrationService'</EndpointSitaIntegrationService>
+		    	</PropertyGroup>	
+		    </When>
+		    <When Condition="'$(SecurityMode)'=='On'">
+		    	<PropertyGroup>
+		    		<Security>TransportWithMessageCredential</Security>
+		    		<Message>UserName</Message>
+		    		<!-- <transport>None</transport> -->
+		    	</PropertyGroup>	
+		    </When>
+		</Choose>  -->		
+	</Target>
+
+</Project>
