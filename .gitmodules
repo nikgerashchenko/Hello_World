@@ -1,3 +1,6 @@
 [submodule "Submodule_test1"]
 	path = Submodule_test1
 	url = https://github.com/nikgerashchenko/Submodule_test.git
+[submodule "Submodule_test"]
+	path = Submodule_test
+	url = D:\\Workspace\\HelloWorld\\Submodule_test
