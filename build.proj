@@ -6,7 +6,8 @@
 	
 
     <PropertyGroup>
-			<server Condition = "'$(server)'=''">TestServer = null</server>
+			<server Condition="'$(server)'==''">TestServer = null</server>
+					
 	</PropertyGroup>
 
 
