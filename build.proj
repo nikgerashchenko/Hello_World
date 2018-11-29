@@ -6,38 +6,27 @@
 	
 
     <PropertyGroup>
-			<branch>no branch</branch>
+			<server>TestServer = null</server>
 	</PropertyGroup>
+
+
+		<Choose>
+		    <When Condition="'$(TestServer)'=='1'">
+		    	<PropertyGroup>
+					<server>TestServer = 1</server>
+		    	</PropertyGroup>	
+		    </When>
+		    <When Condition="'$(TestServer)'=='2'">
+		    	<PropertyGroup>
+					<server>TestServer = 2</server>
+		    	</PropertyGroup>	
+		    </When>
+
+		</Choose> 	
+
+
 	<Target Name="Test" DependsOnTargets="">
-    <Message Text = "$(branch)"/>
-
-    
-
-
-<!-- 		<PropertyGroup>
-			<SecurityMode Condition="'$(SecurityMode)' == '' "></SecurityMode>
-		</PropertyGroup>
-		
-	 	<Choose>
-		    <When Condition="'$(SecurityMode)'=='Off'">
-		    	<PropertyGroup>
-					<EndpointAuthService Condition=" '$(EndpointAuthService)' == '' ">Please edit 'EndpointDocService'</EndpointAuthService>
-					<EndpointDocService Condition=" '$(EndpointDocService)' == '' ">Please edit 'EndpointDocService'</EndpointDocService>
-					<EndpointCatService Condition=" '$(EndpointCatService)' == '' ">Please edit 'EndpointCatService'</EndpointCatService>
-					<EndpointAttachService Condition=" '$(EndpointAttachService)' == '' ">Please edit 'EndpointAttachService'</EndpointAttachService>
-					<EndpointExcelReportsDataServices Condition=" '$(EndpointExcelReportsDataServices)' == '' ">Please edit 'EndpointExcelReportsDataServices'</EndpointExcelReportsDataServices>
-					<EndpointDataSourceDataProvider Condition=" '$(EndpointDataSourceDataProvider)' == '' ">Please edit 'EndpointDataSourceDataProvider'</EndpointDataSourceDataProvider>
-					<EndpointUpdateService Condition=" '$(EndpointUpdateService)' == '' ">Please edit 'EndpointUpdateService'</EndpointUpdateService>
-					<EndpointSitaIntegrationService Condition=" '$(EndpointSitaIntegrationService)' == '' ">Please edit 'EndpointSitaIntegrationService'</EndpointSitaIntegrationService>
-		    	</PropertyGroup>	
-		    </When>
-		    <When Condition="'$(SecurityMode)'=='On'">
-		    	<PropertyGroup>
-		    		<Security>TransportWithMessageCredential</Security>
-		    		<Message>UserName</Message>
-		    	</PropertyGroup>	
-		    </When>
-		</Choose>  -->		
-	</Target>
+    <Message Text = "$(server)"/>
+    </Target>
 
 </Project>
